@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #c9ced3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: Montserrat,sans-serif;
+}
+
+.player-container{
+    height: 550px;
+    width: 400px;
+    background-color:#e7e7e7 ;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0,0 ,0 ,0.3);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.img-container{
+    height: 300px;
+    width: 300px;
+    position:relative;
+    top: -50px;
+    left: 50px;
+    
+}
+.songDetails{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#artist{
+    font-weight: 500;
+    margin-top: 3px;
+    font-style: italic;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px 5px rgba(0,0 ,0 ,0.5);
+}
+
+.progressContainer{
+    background-color: grey;
+    width: 90%;
+    margin: 40px 20px;
+    height: 4px;
+    cursor: pointer;
+  
+
+}
+.progress{
+    cursor: pointer;
+    height: 4px;
+    width: 0%;
+    background-color:black ;
+  
+    
+}
+.duration-wrapper{
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 px;
+}
+
+/* styling control buttons */
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 250px;
+}
+.fas{
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    margin-right: 30px;
+}
+.main-button{
+    font-size: 40px;
+    position: relative;
+    top: 3px;
+}
+
+.fas:hover{
+    filter: brightness(60%);
+}
+
+.volumeContainer{
+    background-color: grey;
+    width: 60%;
+    margin: auto;
+    left: 10px;
+    height: 4px;
+    cursor: pointer;
+    position: relative;
+  
+    /* top: 10px; */
+  
+
+}
+.volumeProgress{
+    cursor: pointer;
+    height: 4px;
+    width: 30%;
+    background-color:black ;
+    
+  
+    
+}
+.volume{
+    position: relative;
+    top: 16px;
+    left:49px
+   
+}
+
+.fa-repeat{
+    position: absolute;
+    top: 9px;
+    right: -10px;
+
+}
+
+.fa-repeat:hover{
+    filter: brightness(60%);
+    
+}
+
+.fa-heart{
+    position:absolute;
+    left: -80px;
+    top: 3px;
+    font-size: 45px;
+    opacity: 0.7;
+}
+
+.fa-heart:active{
+    animation: like 1s ease-in-out 0s none;
+}
+
+@keyframes like {
+
+    0% {transform: scale(0.5);
+         color: red; }
+
+    25% {transform: scale(1);
+        color: red;}
+
+    50% {transform: scale(2.5);
+        color: red;}
+
+    75% {transform: scale(1.5);
+        color: red;}
+
+    100% {transform: scale(1);
+        color: red;}
+    
+    
+}
+
